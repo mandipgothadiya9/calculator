@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment and Withdrawal Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="calculator">
+    <h1>Investment and Withdrawal Calculator</h1>
+
+    <label for="monthlyInvestment">Monthly Investment Amount: <span id="monthlyInvestmentValue">0</span></label>
+    <input type="range" id="monthlyInvestment" min="0" max="500000" step="50">
+
+    <label for="investmentYears">Number of Investment Years: <span id="investmentYearsValue">0</span></label>
+    <input type="range" id="investmentYears" min="1" max="50" step="1">
+
+    <label for="investmentIncreaseRate">Annual Investment Increase Rate (%): <span id="investmentIncreaseRateValue">0</span></label>
+    <input type="range" id="investmentIncreaseRate" min="0" max="50" step="1">
+
+    <label for="annualReturnRate">Annual Return Rate (%): <span id="annualReturnRateValue">0</span></label>
+    <input type="range" id="annualReturnRate" min="0" max="50" step="0.5">
+
+    <label for="monthlyWithdrawal">Initial Monthly Withdrawal Amount: <span id="monthlyWithdrawalValue">0</span></label>
+    <input type="range" id="monthlyWithdrawal" min="0" max="1000000" step="50">
+
+    <label for="withdrawalIncreaseRate">Annual Withdrawal Increase Rate (%): <span id="withdrawalIncreaseRateValue">0</span></label>
+    <input type="range" id="withdrawalIncreaseRate" min="0" max="50" step="0.5">
+
+    <label for="inflationRate">Annual Inflation Rate (%): <span id="inflationRateValue">0</span></label>
+    <input type="range" id="inflationRate" min="0" max="50" step="0.5">
+
+<!--    <button onclick="calculate()">Calculate</button>-->
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
